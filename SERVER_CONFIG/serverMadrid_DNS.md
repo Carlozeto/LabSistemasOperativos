@@ -1,4 +1,4 @@
-# INSTALACION DE SERVICIO DNS Y NGINX
+# Instalacion de servidos DNS y WEB (serverMadrid)
 
 ## Configuracion inicial servidor
 Inicialmente configuramos la IP del servidor para que sea estatica y pueda tener conexion con el servidor DNS:
