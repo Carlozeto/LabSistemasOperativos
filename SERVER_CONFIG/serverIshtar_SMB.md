@@ -1,4 +1,4 @@
-#Instalacion y configuracion servidor SMB (serverIshtar)
+# Instalacion y configuracion servidor SMB (serverIshtar)
 ## Configuracion inicial servidor
 Inicialmente configuramos la IP del servidor para que sea estatica y pueda tener conexion con el servidor DNS:
 
