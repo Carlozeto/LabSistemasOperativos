@@ -69,10 +69,10 @@ apt-get install smbclient
 Asi se conecta:
 
 ```shell
-smbclient //192.168.1.5/data -U yksogeidSMB
+smbclient //192.168.1.5/data -U zetoSMB
 ```
 
 ```shell
-USUARIO: yksogeidSMB
-CLAVE: yksogeid
+USUARIO: zetoSMB
+CLAVE: zeto
 ```
