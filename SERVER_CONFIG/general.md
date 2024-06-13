@@ -8,3 +8,9 @@ apt install net-tools
 apt install openssh-server
 apt install ufx
 ```
+
+Adicionalmente, el servidor de pruebas tiene instaladas las siguientes librerias:
+```shell
+apt install isc-dhcp-client
+apt install curl
+```
