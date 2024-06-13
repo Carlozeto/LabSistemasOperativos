@@ -17,8 +17,8 @@ auto enp0s3
 iface enp0s3 inet static
    address 192.168.1.5
    netmask 255.255.255.0
-   dns-nameserver 192.168.1.20  #IP serverMadrid a configurar
-   dns-search naugthydog.com ns1.naugthydog.com #Direccion servidor web configurado
+   dns-nameserver 192.168.1.20                    #IP serverMadrid a configurar
+   dns-search naugthydog.com ns1.naugthydog.com    #Direccion servidor web configurado
 ```
 ## Configuracion samba
 Actualizamos paquetes e instalamos el paquete de samba con:
