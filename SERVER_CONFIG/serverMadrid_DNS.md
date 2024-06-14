@@ -120,7 +120,7 @@ sudo mkdir -p /var/www/naugthydog.com
 sudo nano /var/www/naugthydog.com/index.html
 ```
 
-Adimos un html basico:
+Anadimos un html basico:
 
 <!DOCTYPE html>
 
