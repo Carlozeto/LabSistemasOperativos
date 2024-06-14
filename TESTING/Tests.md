@@ -74,14 +74,14 @@ Ejecutamos el siguiente comando para verificar la conexion y acceso a la carpeta
 ```shell
 smbclient //192.168.1.5/data -U zeto
 ```
-Obteniendo los siguientes resultados:
+Obteniendo los siguientes resultados:  
 ![Resultados Test SMB.](images/test_cmd8.png)  
 
 ## SFTP
-En este servidor creamos al usuario zeto de SFTP por lo que debemos verificar la conexion con este mediante la ejecucion del comando:
+En este servidor creamos al usuario zeto de SFTP por lo que debemos verificar la conexion con este mediante la ejecucion del comando:  
 ```shell
 sftp -i /mnt/public-keys/id_rsa zeto@192.168.1.30  # Acceso al usuario zeto de la VM con IP 192.168.1.30 mediante SFTP
-```  
+```
 ![Resultados Test SFTP.](images/test_cmd7.png)
 ## SSH-KEYS
 Para esto creamos una llave publica y privada con los servicios de openssh-server mediante
