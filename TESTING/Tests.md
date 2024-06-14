@@ -25,13 +25,15 @@ sudo dhclient enp0s3        # Solicita una nueva configuracion DHCP al servidor
 ip a                   # Verificamos la IP obtenida en el servidor de pruebas
 ```
 Una vez ejecutados los comandos obtenemos los siguientes resultados:
+
 ![Resultados Test DHCP.](images/test_cmd1.png)
 
 De igual manera podemos ver el status del servidor DHCP donde se ve la solicitud y asignacion de IP con:
 ```shell
 sudo systemctl status isc-dhcp-server
 ```
-Estos son los resultados
+Estos son los resultados:
+.
 ![Resultados Test DHCP2.](images/serverGilgamesh.png)
 
 ## DNS y WEB
@@ -41,6 +43,7 @@ Inicialmente probamos la configuracion con el servidor en si (serverMadrid, IP: 
 ping 192.168.1.20
 ```
 Obtenemos lo siguiente:
+.
 ![Resultados Test DNS1.](images/test_cmd2.png)
 Con esto sabemos que tenemos conexion al servidor.
 
@@ -50,10 +53,13 @@ ping www.naugthydog.com  # Direccion web asignada en el servidor DNS
 ```
 Estos son los resultados: 
 ### Test
+.
 ![Resultados Test DNS2.](images/test_cmd3.png)
 ### serverIshtar
+.
 ![Resultados Test DNS3.](images/serverIshtar.png)
 ### serverManchester
+.
 ![Resultados Test DNS4.](images/serverManchester.png)
 Podemos observar que las VM tienen conexion con el servicio web
 
@@ -98,5 +104,7 @@ ssh zeto@192.168.1.20      # Servidor DNS-WEB
 ssh zeto@192.168.1.30      # Servidor SFTP
 ```
 Obteniendo lo siguiente:
+.
 ![Resultados Test SSH1.](images/test_cmd5.png)
+.
 ![Resultados Test SSH2.](images/test_cmd6.png)
