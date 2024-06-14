@@ -43,7 +43,7 @@ Inicialmente probamos la configuracion con el servidor en si (serverMadrid, IP: 
 ping 192.168.1.20
 ```
 Obtenemos lo siguiente:  
-![Resultados Test DNS1.](images/test_cmd2.png)
+![Resultados Test DNS1.](images/test_cmd2.png)  
 Con esto sabemos que tenemos conexion al servidor.
 
 Posteriormente probamos el sitio web en todos los servidores (Salvo el DHCP) para verificar la configuracion DNS correcta, esto lo validamos ejecutando el siguiente comando
@@ -59,7 +59,7 @@ Estos son los resultados:
 ![Resultados Test DNS3.](images/serverIshtar.png)
 ### serverManchester  
 .
-![Resultados Test DNS4.](images/serverManchester.png)
+![Resultados Test DNS4.](images/serverManchester.png)  
 Podemos observar que las VM tienen conexion con el servicio web
 
 Finalmente, verificamos la informacion del sitio web que recibimos mediante el comando
