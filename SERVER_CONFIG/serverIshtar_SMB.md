@@ -57,7 +57,7 @@ service smbd status
 Creamos usuarios de SMBD con:
 
 ```shell
-smbpasswd -a nombreUsuario
+smbpasswd -a zeto
 ```
 
 Se debe instalar el client de samba
@@ -69,10 +69,10 @@ apt-get install smbclient
 Asi se conecta:
 
 ```shell
-smbclient //192.168.1.5/data -U zetoSMB
+smbclient //192.168.1.5/data -U zeto
 ```
 
 ```shell
-USUARIO: zetoSMB
+USUARIO: zeto
 CLAVE: zeto
 ```
