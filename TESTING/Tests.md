@@ -69,6 +69,13 @@ curl www.naugthydog.com  # Direccion web asignada en el servidor DNS
 Obteniendo lo siguiente:  
 ![Resultados Test DNS5.](images/test_cmd4.png)  
 Que es lo mismo que configuramos en el servidor DNS en /var/www/naugthydog.com/index.html de serverMadrid, por lo cual recibimos la informacion correcta
+## SMB
+Ejecutamos el siguiente comando para verificar la conexion y acceso a la carpeta compartida
+```shell
+smbclient //192.168.1.5/data -U zeto
+```
+Obteniendo los siguientes resultados:
+![Resultados Test SMB.](images/test_cmd8.png)  
 
 ## SFTP
 En este servidor creamos al usuario zeto de SFTP por lo que debemos verificar la conexion con este mediante la ejecucion del comando:
