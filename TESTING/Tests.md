@@ -67,7 +67,7 @@ Finalmente, verificamos la informacion del sitio web que recibimos mediante el c
 curl www.naugthydog.com  # Direccion web asignada en el servidor DNS
 ```
 Obteniendo lo siguiente:  
-![Resultados Test DNS5.](images/test_cmd4.png)
+![Resultados Test DNS5.](images/test_cmd4.png)  
 Que es lo mismo que configuramos en el servidor DNS en /var/www/naugthydog.com/index.html de serverMadrid, por lo cual recibimos la informacion correcta
 
 ## SFTP
