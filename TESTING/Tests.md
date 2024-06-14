@@ -32,7 +32,7 @@ De igual manera podemos ver el status del servidor DHCP donde se ve la solicitud
 ```shell
 sudo systemctl status isc-dhcp-server
 ```
-Estos son los resultados:
+Estos son los resultados:  
 .
 ![Resultados Test DHCP2.](images/serverGilgamesh.png)
 
@@ -42,8 +42,7 @@ Inicialmente probamos la configuracion con el servidor en si (serverMadrid, IP: 
 ```shell
 ping 192.168.1.20
 ```
-Obtenemos lo siguiente:
-.
+Obtenemos lo siguiente:  
 ![Resultados Test DNS1.](images/test_cmd2.png)
 Con esto sabemos que tenemos conexion al servidor.
 
@@ -52,13 +51,13 @@ Posteriormente probamos el sitio web en todos los servidores (Salvo el DHCP) par
 ping www.naugthydog.com  # Direccion web asignada en el servidor DNS
 ```
 Estos son los resultados: 
-### Test
+### Test  
 .
 ![Resultados Test DNS2.](images/test_cmd3.png)
-### serverIshtar
+### serverIshtar  
 .
 ![Resultados Test DNS3.](images/serverIshtar.png)
-### serverManchester
+### serverManchester  
 .
 ![Resultados Test DNS4.](images/serverManchester.png)
 Podemos observar que las VM tienen conexion con el servicio web
@@ -67,7 +66,7 @@ Finalmente, verificamos la informacion del sitio web que recibimos mediante el c
 ```shell
 curl www.naugthydog.com  # Direccion web asignada en el servidor DNS
 ```
-Obteniendo lo siguiente: 
+Obteniendo lo siguiente:  
 ![Resultados Test DNS5.](images/test_cmd4.png)
 Que es lo mismo que configuramos en el servidor DNS en /var/www/naugthydog.com/index.html de serverMadrid, por lo cual recibimos la informacion correcta
 
@@ -75,7 +74,7 @@ Que es lo mismo que configuramos en el servidor DNS en /var/www/naugthydog.com/i
 En este servidor creamos al usuario zeto de SFTP por lo que debemos verificar la conexion con este mediante la ejecucion del comando:
 ```shell
 sftp -i /mnt/public-keys/id_rsa zeto@192.168.1.30  # Acceso al usuario zeto de la VM con IP 192.168.1.30 mediante SFTP
-```
+```  
 ![Resultados Test SFTP.](images/test_cmd7.png)
 ## SSH-KEYS
 Para esto creamos una llave publica y privada con los servicios de openssh-server mediante
@@ -103,8 +102,8 @@ ssh zeto@192.168.1.20      # Servidor DNS-WEB
 
 ssh zeto@192.168.1.30      # Servidor SFTP
 ```
-Obteniendo lo siguiente:
+Obteniendo lo siguiente:  
 .
 ![Resultados Test SSH1.](images/test_cmd5.png)
-.
+.  
 ![Resultados Test SSH2.](images/test_cmd6.png)
